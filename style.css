@@ -10,12 +10,12 @@
 } */
 
 .Nintendo{
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
+  margin-top: 60px;
   padding-top: 0%;
-  width: 75%;
+  width: 70%;
 
 }
 
@@ -27,8 +27,31 @@ body{
 
 .startButton{
   position: relative;
+  margin-top: 100px;
   top: 100%;
   left: 50%;
   rotate: 1deg;
   transform: translate(-50%, -50%);
+}
+
+.Nav-Left{
+  background-color: black;
+  color: white;
+  width: 30%;
+  float: left;
+}
+
+.Nav-Right{
+  background-color: black;
+  color: white;
+  width: 30%;
+  float: right;
+}
+
+.Logo{
+  
+}
+
+.Nav-Section{
+  color: red;
 }
