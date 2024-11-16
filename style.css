@@ -1,0 +1,34 @@
+
+/* #headerText{
+    background-color: white;
+    margin: 0;
+    text-align: right;
+    font-family: "r41-stop", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: grey;
+} */
+
+.Nintendo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-top: 0%;
+  width: 75%;
+
+}
+
+body{
+  /* text-align: right; */
+  background-image: url("../assets/stars.gif");
+    /* background-color: pink; */
+}
+
+.startButton{
+  position: relative;
+  top: 100%;
+  left: 50%;
+  rotate: 1deg;
+  transform: translate(-50%, -50%);
+}
