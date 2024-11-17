@@ -12,7 +12,7 @@ body{
   font-family: "pixelify-sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-image: url("../assets/5.gif");
+  background-image: url("assets/5.gif");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 
@@ -32,37 +32,19 @@ body{
   transform: translate(-50%, -50%);
 }
 
-
-
-.Nav-Left{
-  float: left;
-  margin-top: 100px;
-
-  background: black;
-  width: 35%;
-  height:30px;
-
+.Nav{
+  /* background-color: red; */
+  margin-bottom: 10px;
+  height: 200px;
 }
 
-.Nav-Right{
-  float: right;
-  margin-top: 100px;
-  margin-bottom: 100px;
-
+.Nav-L{
+  background-color: black;
   color: white;
-  background: black;
+  float: left;
+  margin-top: 85px;
   width: 35%;
   height: 30px;
-}
-
-.Logo{
-  float: left;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 0%;
-  margin-bottom: 00px;
-  width: 20%;
-  height: auto;
 }
 
 .Nav-Section-L{
@@ -82,6 +64,22 @@ body{
 
 }
 
+.Nav-C{
+  /* background-color: purple; */
+  float: left;
+  width: 30%;
+  height: 200px;
+}
+
+.Nav-R{
+  background-color: black;
+  color: white;
+  float: right;
+  margin-top: 85px;
+  width: 35%;
+  height: 30px;
+}
+
 .Nav-Section-R{
   color: white;
   width: 50%;
@@ -94,6 +92,13 @@ body{
 
 .Nav-Section-R:hover{
   color: rgb(182, 182, 182);
+} 
+
+.Logo{
+  float: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: auto;
 }
 
 
@@ -149,4 +154,68 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+
+.Contact-Container {
+  background-color: black;
+  color: white; /* Text color for contrast */
+  margin-top: 150px  !important;
+  margin: auto;
+  width: 50%;
+  max-width: 600px; /* Ensure the form is responsive */
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+  text-align: center; /* Center-aligns text and content */
+}
+
+.Contact-Container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #f4f4f4;
+}
+
+.Contact-Container form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center;
+}
+
+.Contact-Container input,
+.Contact-Container textarea {
+  width: 100%; /* Makes fields take up full width */
+  max-width: 300px; /* Limits width of the fields */
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.Contact-Container textarea {
+  height: 150px;
+  resize: none; /* Disables manual resizing */
+}
+
+.Contact-Container input:focus,
+.Contact-Container textarea:focus {
+  outline: none;
+  border-color: #00bfff; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
+}
+
+.Contact-Container button {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Contact-Container button:hover {
+  background-color: #009acd;
 }
