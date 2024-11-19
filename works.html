@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/and6kjw.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
@@ -24,67 +25,55 @@
     </div>
 
 <div style="height: 200px;"></div>
-<!-- Referenced w3schools -->
 
+<!-- Referenced w3schools/chatgpt error help -->
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_5terre.jpg">
-      <img src="assets/temp.jpg" alt="Cinque Terre" width="600" height="400">
+    <a data-overlay="Coffee Break Mobile App UI /n
+      4 Week Project
+      Creating the UI/UX for an app which tracks one's daily caffeine intake" onclick="showOverlay(this)">
+      <img src="assets/coffeeBreak.png" alt="Coffee Break" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Coffee Break Mobile App UI</div>
   </div>
 </div>
 
-
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_forest.jpg">
+    <a data-overlay="coming soon..." onclick="showOverlay(this)">
       <img src="assets/temp.jpg" alt="Forest" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">coming soon...</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_lights.jpg">
-      <img src="assets/temp.jpg" alt="Northern Lights" width="600" height="400">
+    <a data-overlay="coming soon..." onclick="showOverlay(this)">
+      <img src="assets/temp.jpg" alt="Forest" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">coming soon...</div>
   </div>
 </div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_mountains.jpg">
-      <img src="assets/temp.jpg" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
+
+
+
+<div id="overlay" onclick="hideOverlay()">
+  <div id="text"></div>
 </div>
 
-<div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="img_mountains.jpg">
-        <img src="assets/temp.jpg" alt="Mountains" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-  </div>
+<script>
+  function showOverlay(element) {
+    const overlayText = element.getAttribute('data-overlay');
+    document.getElementById('text').textContent = overlayText;
+    document.getElementById('overlay').style.display = 'block';
+  }
 
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="img_mountains.jpg">
-        <img src="assets/temp.jpg" alt="Mountains" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-  </div>
-
-  
-
-<div class="clearfix"></div>
-
+  function hideOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+  }
+</script>
 
     
   </body>
